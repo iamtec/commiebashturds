@@ -14,33 +14,52 @@
 
   </head>
   <!DOCTYPE html>
-<body class="tutorials-controller tutorial-single" data-env="production", data-prefix="/community" data-user-id="">
+<body class="signed-in admin-user tutorials-controller tutorial-single" data-env="production", data-prefix="/community" data-user-id="hazelnut">
+    <script>
+//<![CDATA[
+
+    $(function() {
+      dataLayer = [$.parseJSON('{\"user_id\":\"hazelnut\",\"is_community_page\":true,\"content_type\":\"tutorial\",\"author\":\"Hazel Virdó\",\"difficulty\":\"beginner\",\"created_at\":\"2015-05-06T18:22:09.619Z\",\"published_at\":null,\"updated_at\":\"2015-05-06T18:22:09.619Z\",\"article_tags\":\"Miscellaneous\"}')];
+    });
+
+//]]>
+</script>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KHWBBT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KHWBBT');</script>
+<!-- End Google Tag Manager -->
+    
 
     <div class='outside_viewport'>
         <div class='tutorial-info-bar-container top'>
   <div class='tutorial-info-bar'>
     <div class='left-section'>
       <div class='tutorial-author-avatar'>
-        <a href="/community/users/jellingwood"><img alt="jellingwood" class="avatar avatar-medium" height="80" src="https://secure.gravatar.com/avatar/60d901f61a6146e14a3e989bc1f4ef11?secure=true&d=identicon" width="80" /></a>
+        <a href="/community/users/hazelnut"><img alt="1006696" class="avatar avatar-medium" src="https://community-cdn-digitalocean-com.global.ssl.fastly.net/assets/users/avatars/medium/1006696.jpg?1422470415" /></a>
       </div>
       
       <div class='author-and-date'>
           <div class='tutorial-author'>
-            <div class='by'>By: </div><a href="/community/users/jellingwood">Justin Ellingwood</a>
+            <div class='by'>By: </div><a href="/community/users/hazelnut">Hazel Virdó</a>
             
           </div>
           
-        <div class="tutorial-date">Apr 23, 2014</div>
+        <div class="tutorial-date">less than a minute ago</div>
       </div>
 
-      <div class="upvotes upvoted tutorial-upvote"><form accept-charset="UTF-8" action="/community/upvotes/toggle?upvote%5Bupvotable_id%5D=1143&amp;upvote%5Bupvotable_type%5D=Tutorial" class="upvote-form upvote signed-out-upvote" data-remote="true" data-upvotable-type="tutorial" data-upvotable="tutorial_1143" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="patch" /><input name="authenticity_token" type="hidden" value="LTExWiOMeFVXMi8ofJ5UjNY5YS99A7W4vNeDxx0qCKc=" /></div>
-    <button type="submit" disabled="disabled" data-toggle="modal" data-target="#sign-in-modal"><span class='icon-upvote-heart-small upvote-heart' data-toggle="modal" data-target="#sign-in-modal" data-return-url= "" title="Do you find this post helpful? Show the author by Hearting it!" data-placement="bottom"></span></button>
+      <div class="upvotes tutorial-upvote"><form accept-charset="UTF-8" action="/community/upvotes/toggle?upvote%5Bupvotable_id%5D=1591&amp;upvote%5Bupvotable_type%5D=Tutorial" class="upvote-form upvote signed-out-upvote" data-remote="true" data-upvotable-type="tutorial" data-upvotable="tutorial_1591" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="patch" /><input name="authenticity_token" type="hidden" value="hSITYMzNVBkg7Gcv+S9Za37nX330cX/koH9aQLkb92s=" /></div>
+    <button type="submit" disabled="disabled"><span class='icon-upvote-heart-full upvote-heart' title="Do you find this post helpful? Show the author by Hearting it!"></span></button>
 
-</form><span class="upvote-text"><span class="hearted-text">Hearted</span><span class="heart-text">Heart</span></span><div class="upvote-count ">26</div></div>
+</form><span class="upvote-text"><span class="hearted-text">Hearted</span><span class="heart-text">Heart</span></span><div class="upvote-count hidden">0</div></div>
 
       <div class='tutorial-comments-count'>
         <span class='icon icon-new-comment'></span>
-        2
+        0
       </div>
     </div>
 
@@ -54,24 +73,24 @@
   <div class='social-sharing social-sharing-container'>
     <ul class='bottom'>
       <li class='shareBtn' id='sbTwitter'>
-        <a href='http://twitter.com/share?text=How To Install Git on Ubuntu 14.04&amp;url=https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-14-04?utm_content=how-to-install-git-on-ubuntu-14-04&amp;utm_medium=community&amp;utm_source=twshare' class='share-popup' title='Share on Twitter' >
+        <a href='http://twitter.com/share?text=How To Set Up a Hexxit Server on Ubuntu 14.04&amp;url=https://www.digitalocean.com/community/tutorials/how-to-set-up-a-hexxit-server-on-ubuntu-14-04?utm_content=how-to-set-up-a-hexxit-server-on-ubuntu-14-04&amp;utm_medium=community&amp;utm_source=twshare' class='share-popup' title='Share on Twitter' >
           <span class='sIcon icon-bird'></span>  
         </a>
       </li>
 
       <li class='shareBtn' id='sbFacebook'>
-        <a class='facebook-share' href='https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-14-04?utm_content=how-to-install-git-on-ubuntu-14-04&amp;utm_medium=community&amp;utm_source=fbshare' onclick='' title='Share on Facebook'>
+        <a class='facebook-share' href='https://www.digitalocean.com/community/tutorials/how-to-set-up-a-hexxit-server-on-ubuntu-14-04?utm_content=how-to-set-up-a-hexxit-server-on-ubuntu-14-04&amp;utm_medium=community&amp;utm_source=fbshare' onclick='' title='Share on Facebook'>
           <span class='sIcon icon-facebook-B'></span>
         </a>
 
       </li>
       <li class='shareBtn' id='sbGoogle'>
-        <a href='https://plus.google.com/share?url=https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-14-04?utm_content=how-to-install-git-on-ubuntu-14-04&amp;utm_medium=community&amp;utm_source=gpshare' class='share-popup' title='Share on Google+'>
+        <a href='https://plus.google.com/share?url=https://www.digitalocean.com/community/tutorials/how-to-set-up-a-hexxit-server-on-ubuntu-14-04?utm_content=how-to-set-up-a-hexxit-server-on-ubuntu-14-04&amp;utm_medium=community&amp;utm_source=gpshare' class='share-popup' title='Share on Google+'>
           <span class='sIcon icon-google-plus-B'></span>  
         </a>
       </li>
       <li class='shareBtn' id='sbYC'>
-        <a href='https://news.ycombinator.com/submitlink?t=How To Install Git on Ubuntu 14.04&amp;u=https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-14-04?utm_content=how-to-install-git-on-ubuntu-14-04&amp;utm_medium=community&amp;utm_source=hnshare' target='_blank' title='Submit to Hacker News'>
+        <a href='https://news.ycombinator.com/submitlink?t=How To Set Up a Hexxit Server on Ubuntu 14.04&amp;u=https://www.digitalocean.com/community/tutorials/how-to-set-up-a-hexxit-server-on-ubuntu-14-04?utm_content=how-to-set-up-a-hexxit-server-on-ubuntu-14-04&amp;utm_medium=community&amp;utm_source=hnshare' target='_blank' title='Submit to Hacker News'>
           <span class='sIcon icon-hacker-news'></span>  
         </a>
       </li>
@@ -86,35 +105,86 @@
   </a>
 </div></div>
 
-        <div class='section-item'><div class='tutorial-translations'>
-  <div class='current-language'>
-    <a href="javascript:void(0);" title="English">
-      <span class='language '></span>
-      <span class='icon icon-arrow-up'></span>
-      <span class='icon icon-arrow-down'></span>
-</a>  </div>
-  <ul class='languages small'>
-        <li>
-          <a class="edit" href="/community/tutorials/git-ubuntu-14-04-ru" title="Russian">
-            <span class='language ru'></span>
-            Russian
-</a>        </li>
-  </ul>
-</div></div>
     </div>
   </div>
 </div>
   <div class='table-of-contents' class='hide-on-pikabu'></div>
+    <ul class='moderation-actions fixed tutorial-moderation inline'>
+        <li>
+    <a class="edit" data-placement="top" data-timeleft="" data-toggle="tooltip" href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-hexxit-server-on-ubuntu-14-04/edit" title="Edit">
+      <span>Edit</span>
+</a>  </li>
+
+  <li><a class="publish" data-method="put" data-placement="top" data-toggle="tooltip" href="/community/tutorials/how-to-set-up-a-hexxit-server-on-ubuntu-14-04/publish" rel="nofollow" title="Publish"><span>Publish</span></a></li>
+
+
+  <li>
+    <a class="destroy" data-confirm="Are you sure?" data-method="put" data-placement="top" data-toggle="tooltip" href="/community/tutorials/how-to-set-up-a-hexxit-server-on-ubuntu-14-04/trash" rel="nofollow" title="Trash">
+      <span>Trash</span>
+</a>  </li>
+
+
+    </ul>
 
     </div>
 
       <div class="mobile-nav">
   
 <div class="account-buttons">
-    <div id="entrance">
-      <a class="button" href="/community/auth/digitalocean?display=sessionless+register" id="sign-up">Sign Up</a>
-      <a class="button" href="/community/auth/digitalocean" id="log-in">Log In</a>
+
+    <div class='logged-in-menu with-notifications'>
+      
+<div class='account-menu'>
+  <a class="hidden" data-method="patch" data-remote="true" href="/community/users/hazelnut" rel="nofollow"></a>
+  <a class="user-name" data-toggle="dropdown" href="#">
+    <div class='menu-user-avatar'>
+      <img alt="1006696" class="avatar avatar-small" src="https://community-cdn-digitalocean-com.global.ssl.fastly.net/assets/users/avatars/small/1006696.jpg?1422470415" />
+      <span class="name">hazelnut</span>
     </div>
+
+    <span class="icon-arrow-down"></span>
+</a>
+  <div class="dropdown do-dropdown-menu">
+    <div class="container">
+
+      <ul id="user-menu" class="">
+
+        <li>
+          <a href="/community/users/hazelnut">
+            <span class="icon-avatar"></span>
+            Profile
+</a>        </li>
+
+        <li class='subscriptions-menu-item'>
+          <a href="/community/users/hazelnut/subscriptions">
+            <span class="icon-notebook"></span>Subscriptions
+</a>        </li>
+
+        <li class='notifications-menu-item'>
+          <a href="/community/notifications">
+            <span class="icon-heart"></span>Notifications
+</a>        </li>
+
+        <li>
+          <a href="/community/users/hazelnut/profile">
+            <span class="icon-gear"></span>
+            Account Settings
+</a>        </li>
+
+        <li>
+          <a data-method="delete" href="/community/auth" rel="nofollow">
+            <span class="icon-power"></span>
+            Log Out
+</a>        </li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+    </div>
+
 </div>
     
   <a class="close-panel icon-close" href="javascript:void(0);"></a>
@@ -126,6 +196,39 @@
 </form>
   
 <nav>
+    <ul class='user-menu mobile-nav-only'>
+        <li class='notifications-menu-item mobile-nav-only'>
+          <a href="/community/notifications">
+            <span class='icon-heart'></span>Notifications
+
+              <span class='notifications-count'>
+                1
+              </span>
+</a>        </li>
+
+        <li>
+          <a href="/community/users/hazelnut">
+            <span class='icon-avatar'></span>
+            Profile
+</a>        </li>
+
+        <li class='subscriptions-menu-item'>
+          <a href="/community/users/hazelnut/subscriptions">
+            <span class='icon-notebook'></span>Subscriptions
+</a>        </li>
+
+        <li>
+          <a href="/community/users/hazelnut/profile">
+            <span class='icon-gear'></span>
+            Account Settings
+</a>        </li>
+
+        <li>
+          <a data-method="delete" href="/community/auth" rel="nofollow">
+            <span class='icon-power'></span>
+            Log Out
+</a>        </li>
+      </ul>
 
   <ul>
     <li><a href="/community/tutorials">Tutorials</a></li>
@@ -135,11 +238,162 @@
   </ul>
 </nav>
 
-  
+  <nav class="moderation-nav">
+  <ul class="filters">
+    <li>
+      <a href="/community/tutorials?moderation=true">
+        <span class="icon-gear"></span> Tutorials
+</a>    </li>
+    <li>
+      <a href="/community/tutorial_series?moderation=true">
+        <span class="icon-gear"></span> Series
+</a>    </li>
+    <li>
+      <a href="/community/comments/all_index?moderation=true">
+        <span class="icon-gear"></span> Comments
+</a>    </li>
+    <li>
+      <a href="/community/questions?moderation=true">
+        <span class="icon-gear"></span> Questions
+</a>    </li>
+    <li>
+      <a href="/community/answers?moderation=true">
+        <span class="icon-gear"></span> Answers
+</a>    </li>
+    <li>
+      <a href="/community/projects?moderation=true">
+        <span class="icon-gear"></span> Projects
+</a>    </li>
+    <li>
+      <a href="/community/users/moderation?moderation=true">
+        <span class="icon-gear"></span> Users
+</a>    </li>
+    <li>
+      <a href="/community/featured_objects?moderation=true">
+        <span class="icon-gear"></span> Homepage
+</a>    </li>
+    <li>
+      <a href="/community/upvotes/leaderboard?moderation=true">
+        <span class="icon-gear"></span> Leaderboard
+</a>    </li>
+    <li>
+      <a href="/community/upvotes/upvote_leaderboard?moderation=true">
+        <span class="icon-gear"></span> Upvotes
+</a>    </li>
+    <li>
+      <a href="/community/subscriptions/leaderboard?moderation=true">
+        <span class="icon-gear"></span> Subscriptions
+</a>    </li>
+    <li>
+      <a href="/community/reports?moderation=true">
+        <span class="icon-gear"></span> Reports
+</a>    </li>
+    <li>
+      <a href="/community/tags/all_index?moderation=true">
+        <span class="icon-gear"></span> Tags
+</a>    </li>
+    <li>|</li>
+    <li>
+      <a href="/community/moderation/spam?moderation=true">
+        <span class="icon-gear"></span> Spam
+        (10)
+</a>    </li>
+    <li>
+      <a href="/community/moderation/flagged?moderation=true">
+        <span class="icon-gear"></span> Flagged
+        (2)
+</a>    </li>
+    <li>
+      <a href="/community/moderation/trash?moderation=true">
+        <span class="icon-gear"></span> Trash
+        (1776)
+</a>    </li>
+  </ul>
+</nav>
 </div>
 
-      
-    	<header>
+        <div class="moderation-bar ">
+    <div class="wrapper">
+      <div class="moderation-bucket-header">
+        <div class="moderation-filter-bar">
+          <nav class="moderation-nav">
+  <ul class="filters">
+    <li>
+      <a href="/community/tutorials?moderation=true">
+        <span class="icon-gear"></span> Tutorials
+</a>    </li>
+    <li>
+      <a href="/community/tutorial_series?moderation=true">
+        <span class="icon-gear"></span> Series
+</a>    </li>
+    <li>
+      <a href="/community/comments/all_index?moderation=true">
+        <span class="icon-gear"></span> Comments
+</a>    </li>
+    <li>
+      <a href="/community/questions?moderation=true">
+        <span class="icon-gear"></span> Questions
+</a>    </li>
+    <li>
+      <a href="/community/answers?moderation=true">
+        <span class="icon-gear"></span> Answers
+</a>    </li>
+    <li>
+      <a href="/community/projects?moderation=true">
+        <span class="icon-gear"></span> Projects
+</a>    </li>
+    <li>
+      <a href="/community/users/moderation?moderation=true">
+        <span class="icon-gear"></span> Users
+</a>    </li>
+    <li>
+      <a href="/community/featured_objects?moderation=true">
+        <span class="icon-gear"></span> Homepage
+</a>    </li>
+    <li>
+      <a href="/community/upvotes/leaderboard?moderation=true">
+        <span class="icon-gear"></span> Leaderboard
+</a>    </li>
+    <li>
+      <a href="/community/upvotes/upvote_leaderboard?moderation=true">
+        <span class="icon-gear"></span> Upvotes
+</a>    </li>
+    <li>
+      <a href="/community/subscriptions/leaderboard?moderation=true">
+        <span class="icon-gear"></span> Subscriptions
+</a>    </li>
+    <li>
+      <a href="/community/reports?moderation=true">
+        <span class="icon-gear"></span> Reports
+</a>    </li>
+    <li>
+      <a href="/community/tags/all_index?moderation=true">
+        <span class="icon-gear"></span> Tags
+</a>    </li>
+    <li>|</li>
+    <li>
+      <a href="/community/moderation/spam?moderation=true">
+        <span class="icon-gear"></span> Spam
+        (10)
+</a>    </li>
+    <li>
+      <a href="/community/moderation/flagged?moderation=true">
+        <span class="icon-gear"></span> Flagged
+        (2)
+</a>    </li>
+    <li>
+      <a href="/community/moderation/trash?moderation=true">
+        <span class="icon-gear"></span> Trash
+        (1776)
+</a>    </li>
+  </ul>
+</nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+     <header>
   <div class='main-menu-container'>
     <div class='wrapper'>
       <div class='logo'>
@@ -156,6 +410,39 @@
 
       
 <nav>
+    <ul class='user-menu mobile-nav-only'>
+        <li class='notifications-menu-item mobile-nav-only'>
+          <a href="/community/notifications">
+            <span class='icon-heart'></span>Notifications
+
+              <span class='notifications-count'>
+                1
+              </span>
+</a>        </li>
+
+        <li>
+          <a href="/community/users/hazelnut">
+            <span class='icon-avatar'></span>
+            Profile
+</a>        </li>
+
+        <li class='subscriptions-menu-item'>
+          <a href="/community/users/hazelnut/subscriptions">
+            <span class='icon-notebook'></span>Subscriptions
+</a>        </li>
+
+        <li>
+          <a href="/community/users/hazelnut/profile">
+            <span class='icon-gear'></span>
+            Account Settings
+</a>        </li>
+
+        <li>
+          <a data-method="delete" href="/community/auth" rel="nofollow">
+            <span class='icon-power'></span>
+            Log Out
+</a>        </li>
+      </ul>
 
   <ul>
     <li><a href="/community/tutorials">Tutorials</a></li>
@@ -168,10 +455,143 @@
       
       
 <div class="account-buttons">
-    <div id="entrance">
-      <a class="button" href="/community/auth/digitalocean?display=sessionless+register" id="sign-up">Sign Up</a>
-      <a class="button" href="/community/auth/digitalocean" id="log-in">Log In</a>
+
+    <div class='logged-in-menu with-notifications'>
+      
+<div class='account-menu'>
+  <a class="hidden" data-method="patch" data-remote="true" href="/community/users/hazelnut" rel="nofollow"></a>
+  <a class="user-name" data-toggle="dropdown" href="#">
+    <div class='menu-user-avatar'>
+      <img alt="1006696" class="avatar avatar-small" src="https://community-cdn-digitalocean-com.global.ssl.fastly.net/assets/users/avatars/small/1006696.jpg?1422470415" />
+      <span class="name">hazelnut</span>
     </div>
+
+    <span class="icon-arrow-down"></span>
+</a>
+  <div class="dropdown do-dropdown-menu">
+    <div class="container">
+
+      <ul id="user-menu" class="">
+
+        <li>
+          <a href="/community/users/hazelnut">
+            <span class="icon-avatar"></span>
+            Profile
+</a>        </li>
+
+        <li class='subscriptions-menu-item'>
+          <a href="/community/users/hazelnut/subscriptions">
+            <span class="icon-notebook"></span>Subscriptions
+</a>        </li>
+
+        <li class='notifications-menu-item'>
+          <a href="/community/notifications">
+            <span class="icon-heart"></span>Notifications
+</a>        </li>
+
+        <li>
+          <a href="/community/users/hazelnut/profile">
+            <span class="icon-gear"></span>
+            Account Settings
+</a>        </li>
+
+        <li>
+          <a data-method="delete" href="/community/auth" rel="nofollow">
+            <span class="icon-power"></span>
+            Log Out
+</a>        </li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+  <div class="notification-menu">
+    <a data-toggle="dropdown" href="#">
+      <span class='icon icon-bell'></span>
+      <div class="count empty">
+        <span class='notification-menu-count'>
+          1
+        </span>
+      </div>
+</a>
+    <div class="dropdown do-dropdown-menu">
+      <div class="container">
+        <form accept-charset="UTF-8" action="/community/notifications/acknowledge_multiple" class="acknowledge-multiple" data-remote="true" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="patch" /></div>
+          <ul class="notifications">
+              
+                <li class="notification new" id="142266">
+                    <span class="icon icon-tutorial"></span>
+                  <div class="message">
+                    Your tutorial has been submitted for review. Moderators will follow up with you via email shortly. <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-hexxit-server-on-ubuntu-14-04">View Tutorial</a>
+                  </div>
+                  <input class="notification-check-box hidden" id="notification_ids_" name="notification_ids[]" type="checkbox" value="142266" />
+                  <div class='clearfix'></div>
+
+                </li>
+                  <div class='clearfix'></div>
+                <li class="notification " id="128206">
+                    <img alt="pichikeen" class="avatar avatar-small" height="80" src="https://secure.gravatar.com/avatar/9813445f08f3568806a92805e2c0b321?secure=true&d=identicon" width="80" />
+                  <div class="message">
+                    <a class="username" href="/community/users/pichikeen">pichikeen</a> commented on your tutorial. <a href="https://www.digitalocean.com/community/tutorials/how-to-install-phpbb-on-ubuntu-14-04?comment=31275">View Comment</a>
+                  </div>
+                  
+                  <div class='clearfix'></div>
+
+                </li>
+                  <div class='clearfix'></div>
+                <li class="notification " id="103533">
+                    <img alt="obadiahcrowe" class="avatar avatar-small" height="80" src="https://secure.gravatar.com/avatar/a1f075793ada30858079a1630b3ca8ee?secure=true&d=identicon" width="80" />
+                  <div class="message">
+                    <a class="username" href="/community/users/obadiahcrowe">obadiahcrowe</a> commented on your tutorial. <a href="https://www.digitalocean.com/community/tutorials/how-to-install-phpbb-on-ubuntu-14-04?comment=29380">View Comment</a>
+                  </div>
+                  
+                  <div class='clearfix'></div>
+
+                </li>
+                  <div class='clearfix'></div>
+                <li class="notification " id="102326">
+                    <img alt="remco88" class="avatar avatar-small" height="80" src="https://secure.gravatar.com/avatar/53d2b837d7900a1c85ccd16e4cc473da?secure=true&d=identicon" width="80" />
+                  <div class="message">
+                    <a class="username" href="/community/users/remco88">remco88</a> commented on your tutorial. <a href="https://www.digitalocean.com/community/tutorials/how-to-install-phpbb-on-ubuntu-14-04?comment=29294">View Comment</a>
+                  </div>
+                  
+                  <div class='clearfix'></div>
+
+                </li>
+                  <div class='clearfix'></div>
+                <li class="notification " id="78738">
+                    <img alt="1006696" class="avatar avatar-small" src="https://community-cdn-digitalocean-com.global.ssl.fastly.net/assets/users/avatars/small/1006696.jpg?1422470415" />
+                  <div class="message">
+                    Congratulations! Your tutorial has been published. <a href="https://www.digitalocean.com/community/tutorials/how-to-install-phpbb-on-ubuntu-14-04">View Tutorial</a>
+                  </div>
+                  
+                  <div class='clearfix'></div>
+
+                </li>
+                  <div class='clearfix'></div>
+                <li class="notification " id="73989">
+                    <span class="icon icon-tutorial"></span>
+                  <div class="message">
+                    Your tutorial has been submitted for review. Moderators will follow up with you via email shortly. <a href="https://www.digitalocean.com/community/tutorials/how-to-install-phpbb-on-ubuntu-14-04">View Tutorial</a>
+                  </div>
+                  
+                  <div class='clearfix'></div>
+
+                </li>
+                  <div class='clearfix'></div>
+          </ul>
+</form>        <div class="empty">
+          <div class="graphic"><span class="icon icon-bell"></span></div>
+          <div class="caption">No Notifications</div>
+        </div>
+        <a class="view-all" href="/community/notifications">View All</a>
+      </div>
+    </div>
+  </div>
+
+    </div>
+
 </div>
       <div class='header-search'>
   <form accept-charset="UTF-8" action="/community/search" method="get"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
@@ -215,7 +635,13 @@
       
 
       <div class='wrapper layout-wrapper'>
-        <div class="flash-container"></div>
+        <div class="flash-container">  <div class="flashes">
+      <div class="flash notice">
+        <p>Your tutorial has been created!</p>
+        <a class="icon-close" href="#"></a>
+      </div>
+  </div>
+</div>
         
 
 
@@ -223,11 +649,11 @@
 <div class='section-content content'>
   
 
-  <h1 class='content-title'>How To Install Git on Ubuntu 14.04</h1>
+  <h1 class='content-title'>How To Set Up a Hexxit Server on Ubuntu 14.04</h1>
 
     <span class='meta-section tags'>
       <span class='meta-label'>Tags: </span>
-      <span class='meta-value'><a class="" href="/community/tags/git?type=tutorials">Git</a></span>
+      <span class='meta-value'><a class="" href="/community/tags/miscellaneous?type=tutorials">Miscellaneous</a></span>
     </span>
 
     <span class='meta-section tags'>
@@ -235,268 +661,63 @@
       <span class='meta-value'><a class="" href="/community/tags/ubuntu?type=tutorials">Ubuntu</a></span>
     </span>
 
-    <div class="tutorial-series-container collapsed">
-    <div class='section-content'>
-
-      <h2 class='tutorial-series-heading'>Tutorial Series</h2>
-
-          <div class="tutorial-series-toggle">
-            This tutorial is part 1 of 3 in the series:
-            <a data-reveal="fast" href="#tutorial_series_1">Introduction to Git: Installation, Usage, and Branches</a>
-          </div>
-
-        <div id="tutorial_series_1" class="tutorial-series hidden">
-          <a class="icon-close" href="javascript:void(0);"></a>
-          <h3 class="series-title"><a href="/community/tutorial_series/introduction-to-git-installation-usage-and-branches">Introduction to Git: Installation, Usage, and Branches</a></h2>
-
-            <div class="description">
-              This series covers the installation and usage of git on an Ubuntu 14.04 server. After completing the series, the reader should feel comfortable installing and using git, as well as how to create two branches (master and develop) and how to merge code from the development stage to production.
-            </div>
-          <ol class="tutorial-series-list">
-    <li class="active">
-      <h2><a href="/community/tutorials/how-to-install-git-on-ubuntu-14-04">How To Install Git on Ubuntu 14.04</a></h2>
-
-      <div class='feedable-date'>April 23, 2014</div>
-      <div class="meta">
-        <div class='points'>
-          <span class='icon-upvote-heart-small'></span>
-          26
-        </div>
-
-        <div class='response-count'>
-          <span class='icon icon-new-comment'></span>
-          2
-        </div>
-
-          <span class="author">By <a href="/community/users/jellingwood">Justin Ellingwood</a></span>
-      </div>
-      <div class="arrow-left"></div>
-    </li>
-    <li class="">
-      <h2><a href="/community/tutorials/how-to-use-git-effectively">How To Use Git Effectively</a></h2>
-
-      <div class='feedable-date'>March  6, 2013</div>
-      <div class="meta">
-        <div class='points'>
-          <span class='icon-upvote-heart-small'></span>
-          15
-        </div>
-
-        <div class='response-count'>
-          <span class='icon icon-new-comment'></span>
-          22
-        </div>
-
-      </div>
-      <div class="arrow-left"></div>
-    </li>
-    <li class="">
-      <h2><a href="/community/tutorials/how-to-use-git-branches">How To Use Git Branches</a></h2>
-
-      <div class='feedable-date'>March 18, 2013</div>
-      <div class="meta">
-        <div class='points'>
-          <span class='icon-upvote-heart-small'></span>
-          6
-        </div>
-
-        <div class='response-count'>
-          <span class='icon icon-new-comment'></span>
-          10
-        </div>
-
-      </div>
-      <div class="arrow-left"></div>
-    </li>
-</ol>
   
-  <a class="next-tutorial" href="/community/tutorials/how-to-use-git-effectively">Next Tutorial</a>
-
-        </div>
-    </div>
-  </div>
-
 
   <div class='content-body tutorial-content'>
     <h3 id="introduction">Introduction</h3>
 
-<p>An indispensable tool in modern software development is some kind of version control system.  Version control systems allow you to keep track of your software at the source level.  You can track changes, revert to previous stages, and branch to create alternate versions of files and directories.</p>
+<p>Hexxit is a Minecraft modpack, i.e. a collection of Minecraft mods. The original game has its roots in freeform exploration and building; Hexxit augments this by adding boss fights, new structures to explore, and lots of rare loot.</p>
 
-<p>One of the most popular version control systems is <code>git</code>, a distributed version control system.  Many projects maintain their files in a git repository, and sites like GitHub and Bitbucket have made sharing and contributing to code simple and valuable.</p>
+<h2 id="prerequisites">Prerequisites</h2>
 
-<p>In this guide, we will demonstrate how to install git on an Ubuntu 14.04 VPS instance.  We will cover how to install the software in two different ways, each of which have benefits.</p>
-
-<p>This tutorial assumes you are signed in as a <a href="https://www.digitalocean.com/community/articles/initial-server-setup-with-ubuntu-14-04">non-root user</a> which you can learn how to create here.</p>
-
-<h2 id="how-to-install-git-with-apt">How To Install Git with Apt</h2>
-
-<p>By far the easiest way of getting <code>git</code> installed and ready to use is by using Ubuntu's default repositories.  This is the fastest method, but the version may be older than the newest version.  If you need the latest release, consider following the steps to compile <code>git</code> from source.</p>
-
-<p>You can use the <code>apt</code> package management tools to update your local package index.  Afterwards, you can download and install the program:</p>
-
-<pre class="code-pre "><code langs="">
-<ul class="prefixed">
-    <li class="line" prefix="$">sudo apt-get update</li>
-    <li class="line" prefix="$">sudo apt-get install git</li>
-</ul>
-</code></pre>
-
-<p>This will download and install <code>git</code> to your system.  You will still have to complete the configuration steps that we cover in the "setup" section, so feel free to skip to <a href="https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-14-04#how-to-set-up-git">that section</a> now.</p>
-
-<h2 id="how-to-install-git-from-source">How To Install Git from Source</h2>
-
-<p>A more flexible method of installing <code>git</code> is to compile the software from source.  This takes longer and will not be maintained through your package manager, but it will allow you to download the latest release and will give you some control over the options you include if you wish to customize.</p>
-
-<p>Before you begin, you need to install the software that <code>git</code> depends on.  This is all available in the default repositories, so we can update our local package index and then install the packages:</p>
-
-<pre class="code-pre ">
-<code langs="">
-<ul class="prefixed">
-    <li class="line" prefix="$">sudo apt-get update</li>
-    <li class="line" prefix="$">sudo apt-get install build-essential libssl-dev libcurl4-gnutls-dev libexpat1-dev gettext unzip</li>
-</ul>
-</code></pre>
-
-<p>After you have installed the necessary dependencies, you can go ahead and get the version of git you want by visiting the <a href="https://github.com/git/git">git project's page on GitHub</a>.</p>
-
-<p>The version you see when you arrive at the project's page is the branch that is actively being committed to.  If you want the latest stable release, you should go change the branch to the latest non-"rc" tag using this button along the left side of the project header:</p>
-
-<p><img src="https://assets.digitalocean.com/articles/git_install_1404/change_branch.png" alt="git change branch"></p>
-
-<p>Next, on the right side of the page, right-click the "Download ZIP" button and select the option similar to "Copy Link Address":</p>
-
-<p><img src="https://assets.digitalocean.com/articles/git_install_1404/download_zip.png" alt="git download zip"></p>
-
-<p>Back on your Ubuntu 14.04 server, you can type <code>wget</code> and follow it by pasting the address you copied.  The URL that you copied may be different from mine:</p>
-
-<pre class="code-pre command">
-<code langs>
-<ul class="prefixed">
-<li class="line" prefix="$">wget <span class="highlight git_version">https://github.com/git/git/archive/v1.9.2.zip</span> -O git.zip</li>
-</ul>
-</code>
-</pre>
-
-<p>Unzip the file that you downloaded and move into the resulting directory by typing:</p>
-
-<pre class="code-pre "><code langs="">
-<ul class="prefixed">
-    <li class="line" prefix="$">unzip git.zip</li>
-    <li class="line" prefix="$">cd git-*</li>
-</ul>
-</code></pre>
-
-<p>Now, you can make the package and install it by typing these two commands:</p>
-
-<pre class="code-pre "><code langs="">
-<ul class="prefixed">
-    <li class="line" prefix="$">make prefix=/usr/local all</li>
-    <li class="line" prefix="$">sudo make prefix=/usr/local install</li>
-</ul>
-</code></pre>
-
-<p>Now that you have <code>git</code> installed, if you want to upgrade to a later version, you can simply clone the repository and then build and install:</p>
-
-<pre class="code-pre command">
-<code langs>
-<ul class="prefixed">
-    <li class="line" prefix="$">git clone <span class="highlight">https://github.com/git/git.git</span></li>
-</ul>
-</code></pre>
-
-<p>To find the URL to use for the clone operation, navigate to the branch or tag that you want on the <a href="https://github.com/git/git">project's GitHub page</a> and then copy the clone URL on the right side:</p>
-
-<p><img src="https://assets.digitalocean.com/articles/git_install_1404/clone_url.png" alt="git clone URL"></p>
-
-<p>This will create a new directory within your current directory where you can rebuild the package and reinstall the newer version, just like you did above.  This will overwrite your older version with the new version:</p>
-
-<pre class="code-pre "><code langs="">
-<ul class="prefixed">
-    <li class="line" prefix="$">make prefix=/usr/local all</li>
-    <li class="line" prefix="$">sudo make prefix=/usr/local install</li>
-</ul>
-</code></pre>
-
-<h2 id="how-to-set-up-git">How To Set Up Git</h2>
-
-<p>Now that you have <code>git</code> installed, you need to do a few things so that the commit messages that will be generated for you will contain your correct information.</p>
-
-<p>The easiest way of doing this is through the <code>git config</code> command.  Specifically, we need to provide our name and email address because <code>git</code> embeds this information into each commit we do.  We can go ahead and add this information by typing:</p>
-
-<pre class="code-pre command">
-<code langs>
-<ul class="prefixed">
-    <li class="line" prefix="$">git config --global user.name "<span class="highlight git_real_name">Your Name</span>"</li>
-    <li class="line" prefix="$">git config --global user.email "<span class="highlight git_email">youremail@domain.com</span>"</li>
-</ul>
-</code>
-</pre>
-
-<p>We can see all of the configuration items that have been set by typing:</p>
-
-<pre class="code-pre command">
-<code langs>
-<ul class="prefixed">
-    <li class="line" prefix="$">git config --list</li>
-</ul>
-</code>
-</pre>
-
-<div class="code-label " title="git configuration">git configuration</div>
-<pre class="code-pre "><code langs>
-user.name= <span class="highlight git_real_name">Your Name</span>
-user.email=<span class="highlight git_email">youremail@domain.com</span>
-</code>
-</pre>
-
-<p>As you can see, this has a slightly different format.  The information is stored in the configuration file, which you can optionally edit by hand with your text editor like this:</p>
-
-<pre class="code-pre command">
-<code langs>
-<ul class="prefixed">
-    <li class="line" prefix="$">nano ~/.gitconfig</li>
-</ul>
-</code>
-</pre>
-
-<div class="code-label " title="~/.gitconfig contents">~/.gitconfig contents</div>
-<pre class="code-pre">
-<code langs>
-[user]
-    name = <span class="highlight git_real_name">Your Name</span>
-    email = <span class="highlight git_email">youremail@domain.com</span>
-</code>
-</pre>
-
-<p>There are many other options that you can set, but these are the two essential ones needed.  If you skip this step, you'll likely see warnings when you commit to <code>git</code> that are similar to this:</p>
-
-<div class="code-label " title="Output when git username and email not set">Output when git username and email not set</div>
-<pre class="code-pre "><code langs>
-[master 0d9d21d] initial project version
- Committer: root 
-Your name and email address were configured automatically based
-on your username and hostname. Please check that they are accurate.
-You can suppress this message by setting them explicitly:
-
-    git config --global user.name "Your Name"
-    git config --global user.email you@example.com
-
-After doing this, you may fix the identity used for this commit with:
-
-    git commit --amend --reset-author
-</code></pre>
-
-<p>This makes more work for you because you will then have to revise the commits you have done with the corrected information.</p>
-
-<h2 id="conclusion">Conclusion</h2>
-
-<p>You should now have <code>git</code> installed and ready to use on your system.  To learn more about how to use Git, check out these articles:</p>
+<p>To follow this tutorial, you will need:</p>
 
 <ul>
-<li><a href="https://www.digitalocean.com/community/articles/how-to-use-git-effectively">How To Use Git Effectively</a></li>
-<li><a href="https://www.digitalocean.com/community/articles/how-to-use-git-branches">How To Use Git Branches</a></li>
+<li>One Ubuntu 14.04 Droplet.</li>
 </ul>
-<div class="author">By Justin Ellingwood</div>
+<p>You may want to choose a Droplet with several GBs of RAM if you intend to have a lot of players on your server.</p>
+
+<h2 id="step-1-—-installing-the-necessary-packages">Step 1 — Installing the Necessary Packages</h2>
+
+<p>In this step, we will install Hexxit's dependencies.</p>
+
+<p>First, update the package list.</p>
+<pre class="code-pre command"><code langs=""><ul class="prefixed"><li class="line" prefix="$">apt-get update
+</li></ul></code></pre>
+<p>Next, install Java, screen, and unzip.</p>
+<pre class="code-pre command"><code langs=""><ul class="prefixed"><li class="line" prefix="$">apt-get install -y default-jdk screen unzip
+</li></ul></code></pre>
+<h2 id="step-2-—-installing-hexxit">Step 2 — Installing Hexxit</h2>
+
+<p>In this step, we will download and install Hexxit.</p>
+
+<p>Because Hexxit has a significant number of files, we can avoid cluttering the home directory by creating a new directory for Hexxit.</p>
+<pre class="code-pre command"><code langs=""><ul class="prefixed"><li class="line" prefix="$">mkdir ~/hexxit
+</li></ul></code></pre>
+<p>Change into the <code>~/hexxit</code> directory.</p>
+<pre class="code-pre command"><code langs=""><ul class="prefixed"><li class="line" prefix="$">cd ~/hexxit
+</li></ul></code></pre>
+<p>Next, download Hexxit. At the time of writing, the most recent version is v1.0.10, but you can double check the most recent version via <a href="http://www.technicpack.net/modpack/hexxit.552552">the Hexxit homepage</a>. Copy the <strong>Server Download</strong> link for use in the command below.</p>
+<pre class="code-pre command"><code langs=""><ul class="prefixed"><li class="line" prefix="$">wget <span class="highlight hexxit_url">http://mirror.technicpack.net/Technic/servers/hexxit/Hexxit_Server_v1.0.10.zip</span>
+</li></ul></code></pre>
+<p>Unzip the Hexxit files.</p>
+<pre class="code-pre command"><code langs=""><ul class="prefixed"><li class="line" prefix="$">unzip Hexxit_Server_v1.0.10.zip
+</li></ul></code></pre>
+<p>You can now remove the original <code>.zip</code> file.</p>
+<pre class="code-pre command"><code langs=""><ul class="prefixed"><li class="line" prefix="$">rm Hexxit_Server_v1.0.10.zip
+</li></ul></code></pre>
+<h2 id="step-3-—-running-hexxit">Step 3 — Running Hexxit</h2>
+
+<p>In this step, we will launch Hexxit in a screen session, so it will continue running after you disconnect from the server.</p>
+
+<p>You should specify the amount of memory you want Java to use with the <code>-Xmx</code> and -Xms` flags. This depends on the size Droplet you created. Here, we use 2 GB as an example, but you should customize this based on your needs.</p>
+
+<p>You can also specify the name of the screen session; here we call it <code>hexxit</code>.</p>
+<pre class="code-pre command"><code langs=""><ul class="prefixed"><li class="line" prefix="$">screen -S <span class="highlight screen_name">hexxit</span> -dm bash -c "java -Xmx<span class="highlight max_ram">2048M</span> -Xms<span class="highlight min_ram">2048M</span> -jar Hexxit.jar nogui"
+</li></ul></code></pre>
+<h2 id="conclusion">Conclusion</h2>
+
+<p>You now have a Hexxit server running and can connect to it using <code>your_server_ip</code>. Happy exploring!</p>
   </div>
 </div>
 
@@ -504,24 +725,24 @@ After doing this, you may fix the identity used for this commit with:
   <div class='tutorial-footer-details'>
   <div class='section-content'>
     <div class='tutorial-footer-user'>
-        <a href="/community/users/jellingwood"><img alt="jellingwood" class="avatar avatar-large" height="80" src="https://secure.gravatar.com/avatar/60d901f61a6146e14a3e989bc1f4ef11?secure=true&d=identicon" width="80" /></a>
-        <div class='tutorial-footer-username'>By: <a href="/community/users/jellingwood">Justin Ellingwood</a></div>
+        <a href="/community/users/hazelnut"><img alt="1006696" class="avatar avatar-large" src="https://community-cdn-digitalocean-com.global.ssl.fastly.net/assets/users/avatars/large/1006696.jpg?1422470415" /></a>
+        <div class='tutorial-footer-username'>By: <a href="/community/users/hazelnut">Hazel Virdó</a></div>
 
         
     </div>
 
-    <div class="upvotes upvoted tutorial-upvote large-upvotes"><form accept-charset="UTF-8" action="/community/upvotes/toggle?upvote%5Bupvotable_id%5D=1143&amp;upvote%5Bupvotable_type%5D=Tutorial" class="upvote-form upvote signed-out-upvote" data-remote="true" data-upvotable-type="tutorial" data-upvotable="tutorial_1143" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="patch" /><input name="authenticity_token" type="hidden" value="LTExWiOMeFVXMi8ofJ5UjNY5YS99A7W4vNeDxx0qCKc=" /></div>
-    <button type="submit" disabled="disabled" data-toggle="modal" data-target="#sign-in-modal"><span class='icon-upvote-heart-small upvote-heart' data-toggle="modal" data-target="#sign-in-modal" data-return-url= "" title="Do you find this post helpful? Show the author by Hearting it!" data-placement="top"></span></button>
+    <div class="upvotes tutorial-upvote large-upvotes"><form accept-charset="UTF-8" action="/community/upvotes/toggle?upvote%5Bupvotable_id%5D=1591&amp;upvote%5Bupvotable_type%5D=Tutorial" class="upvote-form upvote signed-out-upvote" data-remote="true" data-upvotable-type="tutorial" data-upvotable="tutorial_1591" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="patch" /><input name="authenticity_token" type="hidden" value="hSITYMzNVBkg7Gcv+S9Za37nX330cX/koH9aQLkb92s=" /></div>
+    <button type="submit" disabled="disabled"><span class='icon-upvote-heart-full upvote-heart' title="Do you find this post helpful? Show the author by Hearting it!"></span></button>
 
-</form><span class="upvote-text"><span class="hearted-text">Hearted</span><span class="heart-text">Heart</span></span><div class="upvote-count ">26</div></div>
+</form><span class="upvote-text"><span class="hearted-text">Hearted</span><span class="heart-text">Heart</span></span><div class="upvote-count hidden">0</div></div>
 
     <div class='share-subscribe-actions'>
-      <span class="meta-section opt-in-switch off signed-out-subscribe">
+      <span class="meta-section opt-in-switch on">
   <span class="meta-label subscribe-label">
     <span class='subscription-label subscribe'>Subscribe</span>
     <span class='subscription-label subscribed'>Subscribed</span>
   </span>
-  <span class="meta-value"><a class="mini-switch-container" data-target="#sign-in-modal" data-toggle="modal" href="javascript:void(0);"><div class="mini-switch off signed-out-subscribe"><div class="switch-handle"></div></div></a></span>
+  <span class="meta-value"><a class="mini-switch-container" data-method="patch" data-remote="true" href="https://www.digitalocean.com/community/subscriptions/toggle?subscribable_id=1591&amp;subscribable_type=Tutorial" rel="nofollow"><div class="mini-switch on"><div class="switch-handle"></div></div></a></span>
 </span>
       <div class='sharing'>
   <a class='share-button' href='#'>
@@ -532,24 +753,24 @@ After doing this, you may fix the identity used for this commit with:
   <div class='social-sharing social-sharing-container'>
     <ul class='top'>
       <li class='shareBtn' id='sbTwitter'>
-        <a href='http://twitter.com/share?text=How To Install Git on Ubuntu 14.04&amp;url=https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-14-04?utm_content=how-to-install-git-on-ubuntu-14-04&amp;utm_medium=community&amp;utm_source=twshare' class='share-popup' title='Share on Twitter' >
+        <a href='http://twitter.com/share?text=How To Set Up a Hexxit Server on Ubuntu 14.04&amp;url=https://www.digitalocean.com/community/tutorials/how-to-set-up-a-hexxit-server-on-ubuntu-14-04?utm_content=how-to-set-up-a-hexxit-server-on-ubuntu-14-04&amp;utm_medium=community&amp;utm_source=twshare' class='share-popup' title='Share on Twitter' >
           <span class='sIcon icon-bird'></span>  
         </a>
       </li>
 
       <li class='shareBtn' id='sbFacebook'>
-        <a class='facebook-share' href='https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-14-04?utm_content=how-to-install-git-on-ubuntu-14-04&amp;utm_medium=community&amp;utm_source=fbshare' onclick='' title='Share on Facebook'>
+        <a class='facebook-share' href='https://www.digitalocean.com/community/tutorials/how-to-set-up-a-hexxit-server-on-ubuntu-14-04?utm_content=how-to-set-up-a-hexxit-server-on-ubuntu-14-04&amp;utm_medium=community&amp;utm_source=fbshare' onclick='' title='Share on Facebook'>
           <span class='sIcon icon-facebook-B'></span>
         </a>
 
       </li>
       <li class='shareBtn' id='sbGoogle'>
-        <a href='https://plus.google.com/share?url=https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-14-04?utm_content=how-to-install-git-on-ubuntu-14-04&amp;utm_medium=community&amp;utm_source=gpshare' class='share-popup' title='Share on Google+'>
+        <a href='https://plus.google.com/share?url=https://www.digitalocean.com/community/tutorials/how-to-set-up-a-hexxit-server-on-ubuntu-14-04?utm_content=how-to-set-up-a-hexxit-server-on-ubuntu-14-04&amp;utm_medium=community&amp;utm_source=gpshare' class='share-popup' title='Share on Google+'>
           <span class='sIcon icon-google-plus-B'></span>  
         </a>
       </li>
       <li class='shareBtn' id='sbYC'>
-        <a href='https://news.ycombinator.com/submitlink?t=How To Install Git on Ubuntu 14.04&amp;u=https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-14-04?utm_content=how-to-install-git-on-ubuntu-14-04&amp;utm_medium=community&amp;utm_source=hnshare' target='_blank' title='Submit to Hacker News'>
+        <a href='https://news.ycombinator.com/submitlink?t=How To Set Up a Hexxit Server on Ubuntu 14.04&amp;u=https://www.digitalocean.com/community/tutorials/how-to-set-up-a-hexxit-server-on-ubuntu-14-04?utm_content=how-to-set-up-a-hexxit-server-on-ubuntu-14-04&amp;utm_medium=community&amp;utm_source=hnshare' target='_blank' title='Submit to Hacker News'>
           <span class='sIcon icon-hacker-news'></span>  
         </a>
       </li>
@@ -559,81 +780,7 @@ After doing this, you may fix the identity used for this commit with:
     </div>
   </div>
 </div>
-    <div class="tutorial-series-container ">
-    <div class='section-content'>
-
-      <h2 class='tutorial-series-heading'>Tutorial Series</h2>
-
-
-        <div id="tutorial_series_1" class="tutorial-series ">
-          
-          <h3 class="series-title"><a href="/community/tutorial_series/introduction-to-git-installation-usage-and-branches">Introduction to Git: Installation, Usage, and Branches</a></h2>
-
-            <div class="description">
-              This series covers the installation and usage of git on an Ubuntu 14.04 server. After completing the series, the reader should feel comfortable installing and using git, as well as how to create two branches (master and develop) and how to merge code from the development stage to production.
-            </div>
-          <ol class="tutorial-series-list">
-    <li class="active">
-      <h2><a href="/community/tutorials/how-to-install-git-on-ubuntu-14-04">How To Install Git on Ubuntu 14.04</a></h2>
-
-      <div class='feedable-date'>April 23, 2014</div>
-      <div class="meta">
-        <div class='points'>
-          <span class='icon-upvote-heart-small'></span>
-          26
-        </div>
-
-        <div class='response-count'>
-          <span class='icon icon-new-comment'></span>
-          2
-        </div>
-
-          <span class="author">By <a href="/community/users/jellingwood">Justin Ellingwood</a></span>
-      </div>
-      <div class="arrow-left"></div>
-    </li>
-    <li class="">
-      <h2><a href="/community/tutorials/how-to-use-git-effectively">How To Use Git Effectively</a></h2>
-
-      <div class='feedable-date'>March  6, 2013</div>
-      <div class="meta">
-        <div class='points'>
-          <span class='icon-upvote-heart-small'></span>
-          15
-        </div>
-
-        <div class='response-count'>
-          <span class='icon icon-new-comment'></span>
-          22
-        </div>
-
-      </div>
-      <div class="arrow-left"></div>
-    </li>
-    <li class="">
-      <h2><a href="/community/tutorials/how-to-use-git-branches">How To Use Git Branches</a></h2>
-
-      <div class='feedable-date'>March 18, 2013</div>
-      <div class="meta">
-        <div class='points'>
-          <span class='icon-upvote-heart-small'></span>
-          6
-        </div>
-
-        <div class='response-count'>
-          <span class='icon icon-new-comment'></span>
-          10
-        </div>
-
-      </div>
-      <div class="arrow-left"></div>
-    </li>
-</ol>
-
-        </div>
-    </div>
-  </div>
-
+  
   <div class='tutorial-ctas'>
   <div class='section-content'>
     <div class='cta-description'>
@@ -641,7 +788,7 @@ After doing this, you may fix the identity used for this commit with:
 
       <p>Simple setup. Full root access. Straightforward pricing.</p>
 
-      <a class="cloud-tutorial-cta" href="https://www.digitalocean.com/?utm_medium=community&amp;utm_source=community_gencta&amp;utm_campaign=needaserver&amp;utm_content=how-to-install-git-on-ubuntu-14-04">Deploy Server</a>
+      <a class="cloud-tutorial-cta" href="https://www.digitalocean.com/?utm_medium=community&amp;utm_source=community_gencta&amp;utm_campaign=needaserver&amp;utm_content=how-to-set-up-a-hexxit-server-on-ubuntu-14-04">Deploy Server</a>
     </div>
   </div>
 </div>
@@ -650,11 +797,11 @@ After doing this, you may fix the identity used for this commit with:
       <h2>Related Tutorials</h2>
 
       <ul>
-            <li><a class="related-link" href="/community/tutorials/how-to-set-up-gogs-on-ubuntu-14-04">How To Set Up Gogs on Ubuntu 14.04</a></li>
-            <li><a class="related-link" href="/community/tutorials/how-to-use-the-gitlab-user-interface-to-manage-projects">How To Use the GitLab User Interface To Manage Projects</a></li>
-            <li><a class="related-link" href="/community/tutorials/how-to-set-up-a-private-git-server-on-a-vps">How To Set Up a Private Git Server on a VPS</a></li>
-            <li><a class="related-link" href="/community/tutorials/how-to-use-git-branches">How To Use Git Branches</a></li>
-            <li><a class="related-link" href="/community/tutorials/how-to-use-git-effectively">How To Use Git Effectively</a></li>
+            <li><a class="related-link" href="/community/tutorials/how-to-find-broken-links-on-your-website-using-wget-on-debian-7">How To Find Broken Links on Your Website Using Wget on Debian 7</a></li>
+            <li><a class="related-link" href="/community/tutorials/how-to-set-up-seti-home-on-ubuntu-14-04-or-debian-7">How To Set Up SETI@home on Ubuntu 14.04 or Debian 7</a></li>
+            <li><a class="related-link" href="/community/tutorials/how-to-use-pageant-to-streamline-ssh-key-authentication-with-putty">How To Use Pageant to Streamline SSH Key Authentication with PuTTY</a></li>
+            <li><a class="related-link" href="/community/tutorials/an-advanced-message-queuing-protocol-amqp-walkthrough">An Advanced Message Queuing Protocol (AMQP) Walkthrough</a></li>
+            <li><a class="related-link" href="/community/tutorials/how-to-configure-tmux-on-a-cloud-server">How to Configure tmux on a Cloud Server</a></li>
       </ul>
     </div>
   </div>
@@ -663,36 +810,45 @@ After doing this, you may fix the identity used for this commit with:
 
 <div class='content-comments'>
   <div class='section-content'>
-    <div class="tutorial commentable" id="tutorial_1143">
+    <div class="tutorial commentable" id="tutorial_1591">
 
   <div class="comments-header">
-    <h4 class="comments-count"><span>2 Comments</span></h4>
+    <h4 class="comments-count"><span>0 Comments</span></h4>
   </div>
 
-  <div class="response no-avatar  response-form">
+  <div class="response   response-form">
 
   <div class="js-display-on-error flash error hidden"></div>
-  <form accept-charset="UTF-8" action="/community/tutorials/how-to-install-git-on-ubuntu-14-04/comments" class="content-form disabled-form" data-remote="true" id="new_comment" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <form accept-charset="UTF-8" action="/community/tutorials/how-to-set-up-a-hexxit-server-on-ubuntu-14-04/comments" class="content-form " data-remote="true" id="new_comment" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
     <textarea class="js-comment-content tutorial-comment-field" data-markdown="true" id="comment_content" name="comment[content]" placeholder="Leave a comment...">
 </textarea>
 
-      <div class="log-in-notice "><a href="/community/auth/digitalocean">Log In to Comment</a></div>
+      <div class="response-user-details">
+          <div class='response-avatar'>
+            <a href="/community/users/hazelnut"><img alt="1006696" class="avatar avatar-small" src="https://community-cdn-digitalocean-com.global.ssl.fastly.net/assets/users/avatars/small/1006696.jpg?1422470415" /></a>
+          </div>
+
+          <div class='logged-in'>
+            <div class='logged-in-as'>Logged in as:</div>
+            <a class="username username-owner" href="/community/users/hazelnut">hazelnut</a><div class="staff-tag"><span class="staff-tag-text">Mod</span></div>
+          </div>
+      </div>
+
+      <button type="submit" id="submit-comment" data-disable-with="Submitting...">
+        Comment
+      </button>
+        <div class="subscribe-to-post">
+          <input checked="checked" id="comment_subscribe" name="comment[subscribe]" type="checkbox" />
+          <label for="comment_subscribe">Notify me of replies to my comment</label>
+        </div>
 
     <div class='clearfix'></div>
 </form></div>
 
   <div class="comments">
     <ul class="response-list">
-          <a class="js-click-on-load hidden" data-remote="true" href="/community/tutorials/how-to-install-git-on-ubuntu-14-04/comments" rel="nofollow">Load</a>
     </ul>
 
-      <div class='comments-spinner'><div class="spinner spinner-large">
-  <div class="bounce1"></div>
-  <div class="bounce2"></div>
-  <div class="bounce3"></div>
-  
-</div>
-</div>
   </div>
 
 
@@ -702,10 +858,18 @@ After doing this, you may fix the identity used for this commit with:
   </div>
 </div>
 
-        <div class="clearfix"></div>
-    	</div>
+<div class='creative-commons'>
+  <a class="creative-commons-image" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" rel="license" src="/assets/community/creativecommons-b4540f6e3875bceed5e8823eb0c597a2.png" /></a>
+    <div class='license-text'>This work is licensed under a <a rel='license' href='https://creativecommons.org/licenses/by-nc-sa/4.0/'>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</div>
+</div>
 
-    	<footer class='footer'>
+
+
+
+        <div class="clearfix"></div>
+     </div>
+
+     <footer class='footer'>
   <div class='footer-icon'>
     <span class='icon icon-sammy'></span>
   </div>
@@ -726,26 +890,13 @@ After doing this, you may fix the identity used for this commit with:
 </footer>
 
 
-    <div id='sign-in-modal' class='modal fade' style="display: none;">
-  <div class='modal-dialog'>
-    <div class='modal-content'>
-      <div class='modal-header'>
-        <h1>Sign Up</h1>
-        <a class='close-button' data-dismiss='modal' href=''><span class='icon icon-close'></span></a>
-      </div>
-      <div class='modal-body'>
-        <div class='sign-in-message'>Not so fast, you must have an account before you can do that.</div>
-
-        <div class='sign-in-modal-actions'>
-          <a class="sign-in-link" data-default-url="/community/auth/digitalocean" href="/community/auth/digitalocean">Log In</a>
-          <a class="sign-up-link" data-default-url="/community/auth/digitalocean?display=sessionless+register" href="/community/auth/digitalocean?display=sessionless+register">Create Account</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
+    
+    
+  <script>
+    $(function() {
+      init_sharing();
+    });
+  </script>
 
   </body>
-
 </html>
