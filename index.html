@@ -14,36 +14,7 @@
 
   </head>
   <!DOCTYPE html>
-<html>
-  <head>
-    <title>How To Install Git on Ubuntu 14.04 | DigitalOcean</title>
-
-<meta name="description" content="Git is a powerful distributed version control system that can be used to track software development projects and other information. In this guide, we&#39;ll demonstrate a few different ways to install git on an Ubuntu 14.04 server and how to get started.">
-<meta name="keywords" content="Git">
-
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="DigitalOcean">
-<meta name="twitter:creator" content="DigitalOcean">
-<meta name="twitter:title" content="How To Install Git on Ubuntu 14.04 | DigitalOcean">
-<meta name="twitter:description" content="Git is a powerful distributed version control system that can be used to track software development projects and other information. In this guide, we&#39;ll demonstrate a few different ways to install git on an Ubuntu 14.04 server and how to get started.">
-
-<meta name="og:title" content="How To Install Git on Ubuntu 14.04 | DigitalOcean">
-<meta name="og:description" content="Git is a powerful distributed version control system that can be used to track software development projects and other information. In this guide, we&#39;ll demonstrate a few different ways to install git on an Ubuntu 14.04 server and how to get started.">
-<meta name="og:site_name" content="DigitalOcean">
-<meta name="og:type" content="article">
-
-
-  <meta property='og:image' content='https://www.digitalocean.com/assets/community/tags/git-d75a6fc728e9d0bf8365e650b9235ba3.png'>
-
-  <link rel='canonical' href='https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-14-04'>
-
-
-    <link href="style.css" />
-
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <script src="main.js"></script>
-  </head>
-  <body class="tutorials-controller tutorial-single" data-env="production", data-prefix="/community" data-user-id="">
+<body class="tutorials-controller tutorial-single" data-env="production", data-prefix="/community" data-user-id="">
 
     <div class='outside_viewport'>
         <div class='tutorial-info-bar-container top'>
@@ -401,7 +372,7 @@
 <pre class="code-pre command">
 <code langs>
 <ul class="prefixed">
-<li class="line" prefix="$">wget <span class="highlight">https://github.com/git/git/archive/v1.9.2.zip</span> -O git.zip</li>
+<li class="line" prefix="$">wget <span class="highlight git_version">https://github.com/git/git/archive/v1.9.2.zip</span> -O git.zip</li>
 </ul>
 </code>
 </pre>
@@ -455,8 +426,8 @@
 <pre class="code-pre command">
 <code langs>
 <ul class="prefixed">
-    <li class="line" prefix="$">git config --global user.name "<span class="highlight">Your Name</span>"</li>
-    <li class="line" prefix="$">git config --global user.email "<span class="highlight">youremail@domain.com</span>"</li>
+    <li class="line" prefix="$">git config --global user.name "<span class="highlight git_real_name">Your Name</span>"</li>
+    <li class="line" prefix="$">git config --global user.email "<span class="highlight git_email">youremail@domain.com</span>"</li>
 </ul>
 </code>
 </pre>
@@ -473,11 +444,8 @@
 
 <div class="code-label " title="git configuration">git configuration</div>
 <pre class="code-pre "><code langs>
-"user.name="
-<span class="highlight">Your Name</span>
-"
-user.email="
-<span class="highlight">youremail@domain.com</span>
+user.name= <span class="highlight git_real_name">Your Name</span>
+user.email=<span class="highlight git_email">youremail@domain.com</span>
 </code>
 </pre>
 
@@ -494,12 +462,9 @@ user.email="
 <div class="code-label " title="~/.gitconfig contents">~/.gitconfig contents</div>
 <pre class="code-pre">
 <code langs>
-"[user]
-    name = "
-<span class="highlight">Your Name</span>
-"
-    email = "
-<span class="highlight">youremail@domain.com</span>
+[user]
+    name = <span class="highlight git_real_name">Your Name</span>
+    email = <span class="highlight git_email">youremail@domain.com</span>
 </code>
 </pre>
 
@@ -507,7 +472,7 @@ user.email="
 
 <div class="code-label " title="Output when git username and email not set">Output when git username and email not set</div>
 <pre class="code-pre "><code langs>
-"[master 0d9d21d] initial project version
+[master 0d9d21d] initial project version
  Committer: root 
 Your name and email address were configured automatically based
 on your username and hostname. Please check that they are accurate.
@@ -519,7 +484,6 @@ You can suppress this message by setting them explicitly:
 After doing this, you may fix the identity used for this commit with:
 
     git commit --amend --reset-author
-"
 </code></pre>
 
 <p>This makes more work for you because you will then have to revise the commits you have done with the corrected information.</p>
@@ -783,6 +747,5 @@ After doing this, you may fix the identity used for this commit with:
 
 
   </body>
-</html>
 
 </html>
