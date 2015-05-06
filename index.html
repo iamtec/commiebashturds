@@ -1,14 +1,711 @@
-<!doctype html>
-<html class="no-js" lang="en">
+
+<!DOCTYPE html>
+<html>
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Commie Bashturds</title>
+    <title>How To Install Git on Ubuntu 14.04 | DigitalOcean</title>
+
+<meta name="description" content="Git is a powerful distributed version control system that can be used to track software development projects and other information. In this guide, we&#39;ll demonstrate a few different ways to install git on an Ubuntu 14.04 server and how to get started.">
+<meta name="keywords" content="Git">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="DigitalOcean">
+<meta name="twitter:creator" content="DigitalOcean">
+<meta name="twitter:title" content="How To Install Git on Ubuntu 14.04 | DigitalOcean">
+<meta name="twitter:description" content="Git is a powerful distributed version control system that can be used to track software development projects and other information. In this guide, we&#39;ll demonstrate a few different ways to install git on an Ubuntu 14.04 server and how to get started.">
+
+<meta name="og:title" content="How To Install Git on Ubuntu 14.04 | DigitalOcean">
+<meta name="og:description" content="Git is a powerful distributed version control system that can be used to track software development projects and other information. In this guide, we&#39;ll demonstrate a few different ways to install git on an Ubuntu 14.04 server and how to get started.">
+<meta name="og:site_name" content="DigitalOcean">
+<meta name="og:type" content="article">
+
+
+  <meta property='og:image' content='https://www.digitalocean.com/assets/community/tags/git-d75a6fc728e9d0bf8365e650b9235ba3.png'>
+
+  <link rel='canonical' href='https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-14-04'>
+
+
+    <link href="style.css" />
+
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
   </head>
-  <body>
-    <div id="base">
+  <body class="tutorials-controller tutorial-single" data-env="production", data-prefix="/community" data-user-id="">
+
+    <div class='outside_viewport'>
+        <div class='tutorial-info-bar-container top'>
+  <div class='tutorial-info-bar'>
+    <div class='left-section'>
+      <div class='tutorial-author-avatar'>
+        <a href="/community/users/jellingwood"><img alt="jellingwood" class="avatar avatar-medium" height="80" src="https://secure.gravatar.com/avatar/60d901f61a6146e14a3e989bc1f4ef11?secure=true&d=identicon" width="80" /></a>
+      </div>
+      
+      <div class='author-and-date'>
+          <div class='tutorial-author'>
+            <div class='by'>By: </div><a href="/community/users/jellingwood">Justin Ellingwood</a>
+            
+          </div>
+          
+        <div class="tutorial-date">Apr 23, 2014</div>
+      </div>
+
+      <div class="upvotes upvoted tutorial-upvote"><form accept-charset="UTF-8" action="/community/upvotes/toggle?upvote%5Bupvotable_id%5D=1143&amp;upvote%5Bupvotable_type%5D=Tutorial" class="upvote-form upvote signed-out-upvote" data-remote="true" data-upvotable-type="tutorial" data-upvotable="tutorial_1143" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="patch" /><input name="authenticity_token" type="hidden" value="LTExWiOMeFVXMi8ofJ5UjNY5YS99A7W4vNeDxx0qCKc=" /></div>
+    <button type="submit" disabled="disabled" data-toggle="modal" data-target="#sign-in-modal"><span class='icon-upvote-heart-small upvote-heart' data-toggle="modal" data-target="#sign-in-modal" data-return-url= "" title="Do you find this post helpful? Show the author by Hearting it!" data-placement="bottom"></span></button>
+
+</form><span class="upvote-text"><span class="hearted-text">Hearted</span><span class="heart-text">Heart</span></span><div class="upvote-count ">26</div></div>
+
+      <div class='tutorial-comments-count'>
+        <span class='icon icon-new-comment'></span>
+        2
+      </div>
+    </div>
+
+    <div class='right-section'>
+      <div class='section-item social-sharing-item'><div class='sharing'>
+  <a class='share-button' href='#'>
+    <span class='icon icon-share-square'></span>
+    Share
+  </a>
+
+  <div class='social-sharing social-sharing-container'>
+    <ul class='bottom'>
+      <li class='shareBtn' id='sbTwitter'>
+        <a href='http://twitter.com/share?text=How To Install Git on Ubuntu 14.04&amp;url=https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-14-04?utm_content=how-to-install-git-on-ubuntu-14-04&amp;utm_medium=community&amp;utm_source=twshare' class='share-popup' title='Share on Twitter' >
+          <span class='sIcon icon-bird'></span>  
+        </a>
+      </li>
+
+      <li class='shareBtn' id='sbFacebook'>
+        <a class='facebook-share' href='https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-14-04?utm_content=how-to-install-git-on-ubuntu-14-04&amp;utm_medium=community&amp;utm_source=fbshare' onclick='' title='Share on Facebook'>
+          <span class='sIcon icon-facebook-B'></span>
+        </a>
+
+      </li>
+      <li class='shareBtn' id='sbGoogle'>
+        <a href='https://plus.google.com/share?url=https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-14-04?utm_content=how-to-install-git-on-ubuntu-14-04&amp;utm_medium=community&amp;utm_source=gpshare' class='share-popup' title='Share on Google+'>
+          <span class='sIcon icon-google-plus-B'></span>  
+        </a>
+      </li>
+      <li class='shareBtn' id='sbYC'>
+        <a href='https://news.ycombinator.com/submitlink?t=How To Install Git on Ubuntu 14.04&amp;u=https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-14-04?utm_content=how-to-install-git-on-ubuntu-14-04&amp;utm_medium=community&amp;utm_source=hnshare' target='_blank' title='Submit to Hacker News'>
+          <span class='sIcon icon-hacker-news'></span>  
+        </a>
+      </li>
+    </ul>
+  </div>
+</div></div>
+      <div class='section-item table-of-contents-trigger-container'><div class='toc-trigger'>
+  <a href='javascript:void(0);'>
+    <span class='icon icon-close-light'></span>
+    <span class='icon icon-menu-thin'></span>
+    <span class='title'>Contents</span>
+  </a>
+</div></div>
+
+        <div class='section-item'><div class='tutorial-translations'>
+  <div class='current-language'>
+    <a href="javascript:void(0);" title="English">
+      <span class='language '></span>
+      <span class='icon icon-arrow-up'></span>
+      <span class='icon icon-arrow-down'></span>
+</a>  </div>
+  <ul class='languages small'>
+        <li>
+          <a class="edit" href="/community/tutorials/git-ubuntu-14-04-ru" title="Russian">
+            <span class='language ru'></span>
+            Russian
+</a>        </li>
+  </ul>
+</div></div>
+    </div>
+  </div>
+</div>
+  <div class='table-of-contents' class='hide-on-pikabu'></div>
 
     </div>
+
+      <div class="mobile-nav">
+  
+<div class="account-buttons">
+    <div id="entrance">
+      <a class="button" href="/community/auth/digitalocean?display=sessionless+register" id="sign-up">Sign Up</a>
+      <a class="button" href="/community/auth/digitalocean" id="log-in">Log In</a>
+    </div>
+</div>
+    
+  <a class="close-panel icon-close" href="javascript:void(0);"></a>
+
+  <form accept-charset="UTF-8" action="/community/search" class="mobile-search" method="get"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <span class='icon icon-search-thin'></span>
+    <input id="q" name="q" placeholder="Search" type="text" />
+    <button class="icon-btn" name="button" type="submit">submit</button>
+</form>
+  
+<nav>
+
+  <ul>
+    <li><a href="/community/tutorials">Tutorials</a></li>
+    <li><a href="/community/questions">Questions</a></li>
+    <li><a href="/community/projects">Projects</a></li>
+    <li class="mobile-nav-only"><a href="https://www.digitalocean.com/">Main Site</a></li>
+  </ul>
+</nav>
+
+  
+</div>
+
+      
+      <header>
+  <div class='main-menu-container'>
+    <div class='wrapper'>
+      <div class='logo'>
+        <a class="" href="https://www.digitalocean.com/">
+          <span class='icon icon-cloud'></span>
+</a>
+        <a class="" href="/community">
+          <span class='logo-community-text'>Community</span>
+</a>      </div>
+      
+      <a class="mobile-nav-toggle icon-menu-thin" data-role="left">
+        <span>Menu</span>
+      </a>
+
+      
+<nav>
+
+  <ul>
+    <li><a href="/community/tutorials">Tutorials</a></li>
+    <li><a href="/community/questions">Questions</a></li>
+    <li><a href="/community/projects">Projects</a></li>
+    <li class="mobile-nav-only"><a href="https://www.digitalocean.com/">Main Site</a></li>
+  </ul>
+</nav>
+
+      
+      
+<div class="account-buttons">
+    <div id="entrance">
+      <a class="button" href="/community/auth/digitalocean?display=sessionless+register" id="sign-up">Sign Up</a>
+      <a class="button" href="/community/auth/digitalocean" id="log-in">Log In</a>
+    </div>
+</div>
+      <div class='header-search'>
+  <form accept-charset="UTF-8" action="/community/search" method="get"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <span class='icon icon-search-thin'></span>
+    <input autocomplete="off" class="header-search-input" data-algolia-api-key="c5470567eae7fa1177d43222e18ba086" data-algolia-application-id="6ZHEUVKJ88" id="q" name="q" placeholder="Search" spellcheck="off" type="text" />
+    <button class="icon-btn" name="button" type="submit">submit</button>
+</form></div>
+
+<div class="search-results-dropdown dropdown" data-root-path="https://www.digitalocean.com/community">
+  <div class="container">
+    <div class='header-search-results-list'></div>
+
+    <div id="btn-wrap">
+      <a class="more-search-results" data-search-path="/community/search" href="/community/search">
+        <span class='icon-mag'></span>
+        View All Results
+</a>    </div>
+  </div>
+</div>
+
+<script type='text/template' id='autocomplete-hits-template'>
+  <div class="inner-search">
+    <ul>
+        {{#hits}}
+          <li>
+            <span class='icon icon-{{type}}'></span>
+            <a href='{{url}}'>{{{_highlightResult.title.value}}}</a>
+          </li>
+        {{/hits}}
+    </ul>
+  </div>
+</script>
+      <div class='clearfix'></div>
+    </div>
+  </div>
+  
+  <div class='wrapper'>
+    
+  </div>
+</header>
+      
+
+      <div class='wrapper layout-wrapper'>
+        <div class="flash-container"></div>
+        
+
+
+
+<div class='section-content content'>
+  
+
+  <h1 class='content-title'>How To Install Git on Ubuntu 14.04</h1>
+
+    <span class='meta-section tags'>
+      <span class='meta-label'>Tags: </span>
+      <span class='meta-value'><a class="" href="/community/tags/git?type=tutorials">Git</a></span>
+    </span>
+
+    <span class='meta-section tags'>
+      <span class='meta-label'>Distribution: </span>
+      <span class='meta-value'><a class="" href="/community/tags/ubuntu?type=tutorials">Ubuntu</a></span>
+    </span>
+
+    <div class="tutorial-series-container collapsed">
+    <div class='section-content'>
+
+      <h2 class='tutorial-series-heading'>Tutorial Series</h2>
+
+          <div class="tutorial-series-toggle">
+            This tutorial is part 1 of 3 in the series:
+            <a data-reveal="fast" href="#tutorial_series_1">Introduction to Git: Installation, Usage, and Branches</a>
+          </div>
+
+        <div id="tutorial_series_1" class="tutorial-series hidden">
+          <a class="icon-close" href="javascript:void(0);"></a>
+          <h3 class="series-title"><a href="/community/tutorial_series/introduction-to-git-installation-usage-and-branches">Introduction to Git: Installation, Usage, and Branches</a></h2>
+
+            <div class="description">
+              This series covers the installation and usage of git on an Ubuntu 14.04 server. After completing the series, the reader should feel comfortable installing and using git, as well as how to create two branches (master and develop) and how to merge code from the development stage to production.
+            </div>
+          <ol class="tutorial-series-list">
+    <li class="active">
+      <h2><a href="/community/tutorials/how-to-install-git-on-ubuntu-14-04">How To Install Git on Ubuntu 14.04</a></h2>
+
+      <div class='feedable-date'>April 23, 2014</div>
+      <div class="meta">
+        <div class='points'>
+          <span class='icon-upvote-heart-small'></span>
+          26
+        </div>
+
+        <div class='response-count'>
+          <span class='icon icon-new-comment'></span>
+          2
+        </div>
+
+          <span class="author">By <a href="/community/users/jellingwood">Justin Ellingwood</a></span>
+      </div>
+      <div class="arrow-left"></div>
+    </li>
+    <li class="">
+      <h2><a href="/community/tutorials/how-to-use-git-effectively">How To Use Git Effectively</a></h2>
+
+      <div class='feedable-date'>March  6, 2013</div>
+      <div class="meta">
+        <div class='points'>
+          <span class='icon-upvote-heart-small'></span>
+          15
+        </div>
+
+        <div class='response-count'>
+          <span class='icon icon-new-comment'></span>
+          22
+        </div>
+
+      </div>
+      <div class="arrow-left"></div>
+    </li>
+    <li class="">
+      <h2><a href="/community/tutorials/how-to-use-git-branches">How To Use Git Branches</a></h2>
+
+      <div class='feedable-date'>March 18, 2013</div>
+      <div class="meta">
+        <div class='points'>
+          <span class='icon-upvote-heart-small'></span>
+          6
+        </div>
+
+        <div class='response-count'>
+          <span class='icon icon-new-comment'></span>
+          10
+        </div>
+
+      </div>
+      <div class="arrow-left"></div>
+    </li>
+</ol>
+  
+  <a class="next-tutorial" href="/community/tutorials/how-to-use-git-effectively">Next Tutorial</a>
+
+        </div>
+    </div>
+  </div>
+
+
+  <div class='content-body tutorial-content'>
+    <h3 id="introduction">Introduction</h3>
+
+<p>An indispensable tool in modern software development is some kind of version control system.  Version control systems allow you to keep track of your software at the source level.  You can track changes, revert to previous stages, and branch to create alternate versions of files and directories.</p>
+
+<p>One of the most popular version control systems is <code>git</code>, a distributed version control system.  Many projects maintain their files in a git repository, and sites like GitHub and Bitbucket have made sharing and contributing to code simple and valuable.</p>
+
+<p>In this guide, we will demonstrate how to install git on an Ubuntu 14.04 VPS instance.  We will cover how to install the software in two different ways, each of which have benefits.</p>
+
+<p>This tutorial assumes you are signed in as a <a href="https://www.digitalocean.com/community/articles/initial-server-setup-with-ubuntu-14-04">non-root user</a> which you can learn how to create here.</p>
+
+<h2 id="how-to-install-git-with-apt">How To Install Git with Apt</h2>
+
+<p>By far the easiest way of getting <code>git</code> installed and ready to use is by using Ubuntu's default repositories.  This is the fastest method, but the version may be older than the newest version.  If you need the latest release, consider following the steps to compile <code>git</code> from source.</p>
+
+<p>You can use the <code>apt</code> package management tools to update your local package index.  Afterwards, you can download and install the program:</p>
+<pre class="code-pre "><code langs="">sudo apt-get update
+sudo apt-get install git
+</code></pre>
+<p>This will download and install <code>git</code> to your system.  You will still have to complete the configuration steps that we cover in the "setup" section, so feel free to skip to <a href="https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-14-04#how-to-set-up-git">that section</a> now.</p>
+
+<h2 id="how-to-install-git-from-source">How To Install Git from Source</h2>
+
+<p>A more flexible method of installing <code>git</code> is to compile the software from source.  This takes longer and will not be maintained through your package manager, but it will allow you to download the latest release and will give you some control over the options you include if you wish to customize.</p>
+
+<p>Before you begin, you need to install the software that <code>git</code> depends on.  This is all available in the default repositories, so we can update our local package index and then install the packages:</p>
+<pre class="code-pre "><code langs="">sudo apt-get update
+sudo apt-get install build-essential libssl-dev libcurl4-gnutls-dev libexpat1-dev gettext unzip
+</code></pre>
+<p>After you have installed the necessary dependencies, you can go ahead and get the version of git you want by visiting the <a href="https://github.com/git/git">git project's page on GitHub</a>.</p>
+
+<p>The version you see when you arrive at the project's page is the branch that is actively being committed to.  If you want the latest stable release, you should go change the branch to the latest non-"rc" tag using this button along the left side of the project header:</p>
+
+<p><img src="https://assets.digitalocean.com/articles/git_install_1404/change_branch.png" alt="git change branch"></p>
+
+<p>Next, on the right side of the page, right-click the "Download ZIP" button and select the option similar to "Copy Link Address":</p>
+
+<p><img src="https://assets.digitalocean.com/articles/git_install_1404/download_zip.png" alt="git download zip"></p>
+
+<p>Back on your Ubuntu 14.04 server, you can type <code>wget</code> and follow it by pasting the address you copied.  The URL that you copied may be different from mine:</p>
+
+<pre>
+wget <span class="highlight">https://github.com/git/git/archive/v1.9.2.zip</span> -O git.zip
+</pre>
+
+<p>Unzip the file that you downloaded and move into the resulting directory by typing:</p>
+<pre class="code-pre "><code langs="">unzip git.zip
+cd git-*
+</code></pre>
+<p>Now, you can make the package and install it by typing these two commands:</p>
+<pre class="code-pre "><code langs="">make prefix=/usr/local all
+sudo make prefix=/usr/local install
+</code></pre>
+<p>Now that you have <code>git</code> installed, if you want to upgrade to a later version, you can simply clone the repository and then build and install:</p>
+
+<pre>
+git clone <span class="highlight">https://github.com/git/git.git</span>
+</pre>
+
+<p>To find the URL to use for the clone operation, navigate to the branch or tag that you want on the <a href="https://github.com/git/git">project's GitHub page</a> and then copy the clone URL on the right side:</p>
+
+<p><img src="https://assets.digitalocean.com/articles/git_install_1404/clone_url.png" alt="git clone URL"></p>
+
+<p>This will create a new directory within your current directory where you can rebuild the package and reinstall the newer version, just like you did above.  This will overwrite your older version with the new version:</p>
+<pre class="code-pre "><code langs="">make prefix=/usr/local all
+sudo make prefix=/usr/local install
+</code></pre>
+<h2 id="how-to-set-up-git">How To Set Up Git</h2>
+
+<p>Now that you have <code>git</code> installed, you need to do a few things so that the commit messages that will be generated for you will contain your correct information.</p>
+
+<p>The easiest way of doing this is through the <code>git config</code> command.  Specifically, we need to provide our name and email address because <code>git</code> embeds this information into each commit we do.  We can go ahead and add this information by typing:</p>
+
+<pre>
+git config --global user.name "<span class="highlight">Your Name</span>"
+git config --global user.email "<span class="highlight">youremail@domain.com</span>"
+</pre>
+
+<p>We can see all of the configuration items that have been set by typing:</p>
+
+<pre>
+git config --list
+</pre>
+
+<pre>
+user.name=<span class="highlight">Your Name</span>
+user.email=<span class="highlight">youremail@domain.com</span>
+</pre>
+
+<p>As you can see, this has a slightly different format.  The information is stored in the configuration file, which you can optionally edit by hand with your text editor like this:</p>
+
+<pre>
+nano ~/.gitconfig
+</pre>
+
+<pre>
+[user]
+       name = <span class="highlight">Your Name</span>
+       email = <span class="highlight">youremail@domain.com</span>
+</pre>
+
+<p>There are many other options that you can set, but these are the two essential ones needed.  If you skip this step, you'll likely see warnings when you commit to <code>git</code> that are similar to this:</p>
+<pre class="code-pre "><code langs="">[master 0d9d21d] initial project version
+ Committer: root 
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+</code></pre>
+<p>This makes more work for you because you will then have to revise the commits you have done with the corrected information.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>You should now have <code>git</code> installed and ready to use on your system.  To learn more about how to use Git, check out these articles:</p>
+
+<ul>
+<li><a href="https://www.digitalocean.com/community/articles/how-to-use-git-effectively">How To Use Git Effectively</a></li>
+<li><a href="https://www.digitalocean.com/community/articles/how-to-use-git-branches">How To Use Git Branches</a></li>
+</ul>
+<div class="author">By Justin Ellingwood</div>
+  </div>
+</div>
+
+<div class='tutorial-footer'>
+  <div class='tutorial-footer-details'>
+  <div class='section-content'>
+    <div class='tutorial-footer-user'>
+        <a href="/community/users/jellingwood"><img alt="jellingwood" class="avatar avatar-large" height="80" src="https://secure.gravatar.com/avatar/60d901f61a6146e14a3e989bc1f4ef11?secure=true&d=identicon" width="80" /></a>
+        <div class='tutorial-footer-username'>By: <a href="/community/users/jellingwood">Justin Ellingwood</a></div>
+
+        
+    </div>
+
+    <div class="upvotes upvoted tutorial-upvote large-upvotes"><form accept-charset="UTF-8" action="/community/upvotes/toggle?upvote%5Bupvotable_id%5D=1143&amp;upvote%5Bupvotable_type%5D=Tutorial" class="upvote-form upvote signed-out-upvote" data-remote="true" data-upvotable-type="tutorial" data-upvotable="tutorial_1143" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="patch" /><input name="authenticity_token" type="hidden" value="LTExWiOMeFVXMi8ofJ5UjNY5YS99A7W4vNeDxx0qCKc=" /></div>
+    <button type="submit" disabled="disabled" data-toggle="modal" data-target="#sign-in-modal"><span class='icon-upvote-heart-small upvote-heart' data-toggle="modal" data-target="#sign-in-modal" data-return-url= "" title="Do you find this post helpful? Show the author by Hearting it!" data-placement="top"></span></button>
+
+</form><span class="upvote-text"><span class="hearted-text">Hearted</span><span class="heart-text">Heart</span></span><div class="upvote-count ">26</div></div>
+
+    <div class='share-subscribe-actions'>
+      <span class="meta-section opt-in-switch off signed-out-subscribe">
+  <span class="meta-label subscribe-label">
+    <span class='subscription-label subscribe'>Subscribe</span>
+    <span class='subscription-label subscribed'>Subscribed</span>
+  </span>
+  <span class="meta-value"><a class="mini-switch-container" data-target="#sign-in-modal" data-toggle="modal" href="javascript:void(0);"><div class="mini-switch off signed-out-subscribe"><div class="switch-handle"></div></div></a></span>
+</span>
+      <div class='sharing'>
+  <a class='share-button' href='#'>
+    <span class='icon icon-share-square'></span>
+    Share
+  </a>
+
+  <div class='social-sharing social-sharing-container'>
+    <ul class='top'>
+      <li class='shareBtn' id='sbTwitter'>
+        <a href='http://twitter.com/share?text=How To Install Git on Ubuntu 14.04&amp;url=https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-14-04?utm_content=how-to-install-git-on-ubuntu-14-04&amp;utm_medium=community&amp;utm_source=twshare' class='share-popup' title='Share on Twitter' >
+          <span class='sIcon icon-bird'></span>  
+        </a>
+      </li>
+
+      <li class='shareBtn' id='sbFacebook'>
+        <a class='facebook-share' href='https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-14-04?utm_content=how-to-install-git-on-ubuntu-14-04&amp;utm_medium=community&amp;utm_source=fbshare' onclick='' title='Share on Facebook'>
+          <span class='sIcon icon-facebook-B'></span>
+        </a>
+
+      </li>
+      <li class='shareBtn' id='sbGoogle'>
+        <a href='https://plus.google.com/share?url=https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-14-04?utm_content=how-to-install-git-on-ubuntu-14-04&amp;utm_medium=community&amp;utm_source=gpshare' class='share-popup' title='Share on Google+'>
+          <span class='sIcon icon-google-plus-B'></span>  
+        </a>
+      </li>
+      <li class='shareBtn' id='sbYC'>
+        <a href='https://news.ycombinator.com/submitlink?t=How To Install Git on Ubuntu 14.04&amp;u=https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-14-04?utm_content=how-to-install-git-on-ubuntu-14-04&amp;utm_medium=community&amp;utm_source=hnshare' target='_blank' title='Submit to Hacker News'>
+          <span class='sIcon icon-hacker-news'></span>  
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+    <div class="tutorial-series-container ">
+    <div class='section-content'>
+
+      <h2 class='tutorial-series-heading'>Tutorial Series</h2>
+
+
+        <div id="tutorial_series_1" class="tutorial-series ">
+          
+          <h3 class="series-title"><a href="/community/tutorial_series/introduction-to-git-installation-usage-and-branches">Introduction to Git: Installation, Usage, and Branches</a></h2>
+
+            <div class="description">
+              This series covers the installation and usage of git on an Ubuntu 14.04 server. After completing the series, the reader should feel comfortable installing and using git, as well as how to create two branches (master and develop) and how to merge code from the development stage to production.
+            </div>
+          <ol class="tutorial-series-list">
+    <li class="active">
+      <h2><a href="/community/tutorials/how-to-install-git-on-ubuntu-14-04">How To Install Git on Ubuntu 14.04</a></h2>
+
+      <div class='feedable-date'>April 23, 2014</div>
+      <div class="meta">
+        <div class='points'>
+          <span class='icon-upvote-heart-small'></span>
+          26
+        </div>
+
+        <div class='response-count'>
+          <span class='icon icon-new-comment'></span>
+          2
+        </div>
+
+          <span class="author">By <a href="/community/users/jellingwood">Justin Ellingwood</a></span>
+      </div>
+      <div class="arrow-left"></div>
+    </li>
+    <li class="">
+      <h2><a href="/community/tutorials/how-to-use-git-effectively">How To Use Git Effectively</a></h2>
+
+      <div class='feedable-date'>March  6, 2013</div>
+      <div class="meta">
+        <div class='points'>
+          <span class='icon-upvote-heart-small'></span>
+          15
+        </div>
+
+        <div class='response-count'>
+          <span class='icon icon-new-comment'></span>
+          22
+        </div>
+
+      </div>
+      <div class="arrow-left"></div>
+    </li>
+    <li class="">
+      <h2><a href="/community/tutorials/how-to-use-git-branches">How To Use Git Branches</a></h2>
+
+      <div class='feedable-date'>March 18, 2013</div>
+      <div class="meta">
+        <div class='points'>
+          <span class='icon-upvote-heart-small'></span>
+          6
+        </div>
+
+        <div class='response-count'>
+          <span class='icon icon-new-comment'></span>
+          10
+        </div>
+
+      </div>
+      <div class="arrow-left"></div>
+    </li>
+</ol>
+
+        </div>
+    </div>
+  </div>
+
+  <div class='tutorial-ctas'>
+  <div class='section-content'>
+    <div class='cta-description'>
+      <h2>Spin up an SSD cloud server in under a minute.</h2>
+
+      <p>Simple setup. Full root access. Straightforward pricing.</p>
+
+      <a class="cloud-tutorial-cta" href="https://www.digitalocean.com/?utm_medium=community&amp;utm_source=community_gencta&amp;utm_campaign=needaserver&amp;utm_content=how-to-install-git-on-ubuntu-14-04">Deploy Server</a>
+    </div>
+  </div>
+</div>
+    <div class='related-tutorials'>
+    <div class='section-content'>
+      <h2>Related Tutorials</h2>
+
+      <ul>
+            <li><a class="related-link" href="/community/tutorials/how-to-set-up-gogs-on-ubuntu-14-04">How To Set Up Gogs on Ubuntu 14.04</a></li>
+            <li><a class="related-link" href="/community/tutorials/how-to-use-the-gitlab-user-interface-to-manage-projects">How To Use the GitLab User Interface To Manage Projects</a></li>
+            <li><a class="related-link" href="/community/tutorials/how-to-set-up-a-private-git-server-on-a-vps">How To Set Up a Private Git Server on a VPS</a></li>
+            <li><a class="related-link" href="/community/tutorials/how-to-use-git-branches">How To Use Git Branches</a></li>
+            <li><a class="related-link" href="/community/tutorials/how-to-use-git-effectively">How To Use Git Effectively</a></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<div class='content-comments'>
+  <div class='section-content'>
+    <div class="tutorial commentable" id="tutorial_1143">
+
+  <div class="comments-header">
+    <h4 class="comments-count"><span>2 Comments</span></h4>
+  </div>
+
+  <div class="response no-avatar  response-form">
+
+  <div class="js-display-on-error flash error hidden"></div>
+  <form accept-charset="UTF-8" action="/community/tutorials/how-to-install-git-on-ubuntu-14-04/comments" class="content-form disabled-form" data-remote="true" id="new_comment" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <textarea class="js-comment-content tutorial-comment-field" data-markdown="true" id="comment_content" name="comment[content]" placeholder="Leave a comment...">
+</textarea>
+
+      <div class="log-in-notice "><a href="/community/auth/digitalocean">Log In to Comment</a></div>
+
+    <div class='clearfix'></div>
+</form></div>
+
+  <div class="comments">
+    <ul class="response-list">
+          <a class="js-click-on-load hidden" data-remote="true" href="/community/tutorials/how-to-install-git-on-ubuntu-14-04/comments" rel="nofollow">Load</a>
+    </ul>
+
+      <div class='comments-spinner'><div class="spinner spinner-large">
+  <div class="bounce1"></div>
+  <div class="bounce2"></div>
+  <div class="bounce3"></div>
+  
+</div>
+</div>
+  </div>
+
+
+  <div class='load-more-container'></div>
+</div>
+
+  </div>
+</div>
+
+        <div class="clearfix"></div>
+      </div>
+
+      <footer class='footer'>
+  <div class='footer-icon'>
+    <span class='icon icon-sammy'></span>
+  </div>
+
+  <div class='copyright'>
+    Copyright &copy; 2015 DigitalOcean&trade; Inc.
+  </div>
+
+  <ul class='main-nav-links'>
+    <li><a href="/community">Community</a></li>
+    <li><a href="/community/tutorials">Tutorials</a></li>
+    <li><a href="/community/questions">Questions</a></li>
+    <li><a href="/community/projects">Projects</a></li>
+    <li><a href="/community/tags">Tags</a></li>
+    <li><a href="https://www.digitalocean.com/legal/terms/">Terms, Privacy, &amp; Copyright</a></li>
+    <li><a href="https://www.digitalocean.com/security/">Security</a></li>
+  </ul>
+</footer>
+
+
+    <div id='sign-in-modal' class='modal fade' style="display: none;">
+  <div class='modal-dialog'>
+    <div class='modal-content'>
+      <div class='modal-header'>
+        <h1>Sign Up</h1>
+        <a class='close-button' data-dismiss='modal' href=''><span class='icon icon-close'></span></a>
+      </div>
+      <div class='modal-body'>
+        <div class='sign-in-message'>Not so fast, you must have an account before you can do that.</div>
+
+        <div class='sign-in-modal-actions'>
+          <a class="sign-in-link" data-default-url="/community/auth/digitalocean" href="/community/auth/digitalocean">Log In</a>
+          <a class="sign-up-link" data-default-url="/community/auth/digitalocean?display=sessionless+register" href="/community/auth/digitalocean?display=sessionless+register">Create Account</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="js/app.js"></script>
