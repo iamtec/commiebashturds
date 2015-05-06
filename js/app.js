@@ -1,13 +1,11 @@
 $(function(){
 
-// Sharon's test comment
-
 var string;
 
 
 $('body').append('<code id="code">');
 
-$('code').each(function(){
+$('.code-pre.command').each(function(){
 	var stringAdd = $(this).html();
 	string += stringAdd;
 	string += '\n';
