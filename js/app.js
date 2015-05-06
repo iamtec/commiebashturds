@@ -1,5 +1,7 @@
 $(function(){
 
+// Sharon's test comment
+
 var string;
 
 
