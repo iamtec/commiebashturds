@@ -5,8 +5,6 @@ var string;
 
 $('body').append('<code id="code">');
 
-
-
 $('code').each(function(){
 	var stringAdd = $(this).html();
 	string += stringAdd;
