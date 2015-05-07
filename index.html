@@ -6,16 +6,43 @@
 
     <link rel="stylesheet" media="screen" href="css/style.css" />
     <link rel="stylesheet" media="screen" href="css/main.css" />
+   <link rel="stylesheet" media="screen" href="css/bootstrap.min.css" />
+   <!--  <link rel="stylesheet" media="screen" href="css/bootstrap-theme.min.css" /> -->
     <script src="//use.typekit.net/amz8ydd.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
 
 
   </head>
   <!DOCTYPE html>
 <body class="tutorials-controller tutorial-single" data-env="production", data-prefix="/community" data-user-id="">
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Bash Script</h4>
+      </div>
+      <div class="modal-body" id="modalBody">
+    <button id="copy-button" style="  border: 0;background: #2481B7;color: white; font-weight: 600; padding: 10px 20px; margin-right: 0;border-radius:3px;" data-clipboard-text="" title="Click to copy me.">Copy to Clipboard</button>
+    <script src="js/ZeroClipboard.min.js"></script>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" style="  border: 0;background: #ccc;color: white; font-weight: 600; padding: 10px 20px; width: 107px; margin-right: 0;border-radius:3px;">Close</button>
+        <button type="button" id="triggerIt" class="btn btn-default" data-dismiss="modal" style="  border: 0;background: #2481B7;color: white; font-weight: 600; padding: 10px 20px; margin-right: 0;border-radius:3px;">Spin Up Droplet</button>
+
+
+      </div>
+    </div>
+  </div>
+</div>
 
     <div class='outside_viewport'>
         <div class='tutorial-info-bar-container top'>
@@ -232,12 +259,22 @@
       <p>When you're done, spin up a Droplet and paste the script into your User Data. That's it! Your new Droplet will be created with the tutorial configuration already done!</p>
     </div>
 
-    <span class="validation"></span>
+    
 
-    <input type="text" class="real_name" placeholder="Full name">
-    <input type="text" class="real_email" placeholder="Your Email Address">
-    <input type="text" class="real_git" value="https://github.com/git/git/archive/v2.4.0.zip">
+    <div class="labelRow">
+      <label class="large">Hexxit URL</label>
+      <label>Hexxit Name</label>
+      <label class="small">Max Ram</label>
+      <label class="small">Min Ram</label>
+    </div>
+
+    <input type="text" type="url" required class="hexxit_url_form large" value="http://mirror.technicpack.net/Technic/servers/hexxit/Hexxit_Server_v1.0.10.zip">
+    <input type="text" class="screen_name_form" placeholder="hexxit" required>
+    <input type="text" class="max_ram_form small" placeholder="2048M" required>
+    <input type="text" class="min_ram_form small" placeholder="2048M" required>
     <input type="submit" class="submit" >
+
+    <span class="validation"></span>
   </form>
 
     <span class='meta-section tags'>
@@ -266,7 +303,7 @@
 </ul>
 <p>You may want to choose a Droplet with several GBs of RAM if you intend to have a lot of players on your server.</p>
 
-<h2 id="step-1-—-installing-the-necessary-packages">Step 1 — Installing the Necessary Packages</h2>
+<h2 id="step-1-—-installing-the-necessary-packages">Step 1 - Installing the Necessary Packages</h2>
 
 <p>In this step, we will install Hexxit's dependencies.</p>
 
@@ -276,7 +313,7 @@
 <p>Next, install Java, screen, and unzip.</p>
 <pre class="code-pre command"><code langs=""><ul class="prefixed"><li class="line" prefix="$">apt-get install -y default-jdk screen unzip
 </li></ul></code></pre>
-<h2 id="step-2-—-installing-hexxit">Step 2 — Installing Hexxit</h2>
+<h2 id="step-2-—-installing-hexxit">Step 2 - Installing Hexxit</h2>
 
 <p>In this step, we will download and install Hexxit.</p>
 
@@ -295,7 +332,7 @@
 <p>You can now remove the original <code>.zip</code> file.</p>
 <pre class="code-pre command"><code langs=""><ul class="prefixed"><li class="line" prefix="$">rm Hexxit_Server_v1.0.10.zip
 </li></ul></code></pre>
-<h2 id="step-3-—-running-hexxit">Step 3 — Running Hexxit</h2>
+<h2 id="step-3-—-running-hexxit">Step 3 - Running Hexxit</h2>
 
 <p>In this step, we will launch Hexxit in a screen session, so it will continue running after you disconnect from the server.</p>
 

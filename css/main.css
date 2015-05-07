@@ -1,17 +1,46 @@
 .userData {
 	position: relative;
 	margin: 20px 0;
-	padding: 20px;
+	padding: 25px;
 	border: 1px solid #2481B7;
 }
+
+.labelRow {
+	margin: 10px 0 5px 0;
+	display: block;
+	width: 100%;
+	float: left;
+}
+
+.labelRow label {
+	width: 130px;
+	text-transform: uppercase;
+	font-size: 11px;
+	letter-spacing: 1px;
+	margin-right: 8px;
+	display: block;
+	float: left;
+	color: #2481B7;
+	font-weight: 600;
+}
+
 
 .userData input {
   border: 1px solid #E0E0E0;
   padding: 9px;
   border-radius: 3px;
   font-size: 16px;
-  width: 190px;
+  width: 130px;
   margin-right: 3px;
+  color: #6B6B6B;
+}
+
+.userData input.small, .labelRow label.small {
+	width: 90px;
+}
+
+.userData input.large, .labelRow label.large {
+	width: 260px;
 }
 
 .userData input.submit {
@@ -20,32 +49,34 @@
   color: white;
   font-weight: 600;
   padding: 10px 20px;
-  width: 107px;
+  width: 90px;
   margin-right: 0
 }
 
 .validation {
 	color: #2481B7;
-	font-size: 13px;
+	font-size: 15px;
 	display: block;
 	opacity: 0;
 	max-height: 0;
 	transition: all .3s ease;
+	position: relative;
 }
 
 .validation.open {
-	max-height: 150px;
-	opacity: 1;
-	margin-bottom: 20px;
+	  max-height: 150px;
+  opacity: 1;
+  margin-bottom: 0;
+
+  padding-top: 23px;
 }
 
+
 .validation a {
-	background: #9B9B9B;
-	color: white;
-	padding: 3px 6px;
-	border-radius: 3px;
-	font-weight: 600;
-	margin-left: 5px;
+  color: #2481B7;
+  padding: 0 0 2px 0;
+  border-bottom: 1px dotted #85BEDF;
+  margin-left: 5px;
 }
 
 .intro {
